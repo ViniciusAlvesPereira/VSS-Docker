@@ -48,7 +48,7 @@ RUN cd /home/Armorial-WS && \
     cd Armorial-Actuator-VSS && \  
     # se lembrar de remover isso dps \/
     # essa eh a branch do Actuator q vcs vao usar!
-    git checkout testeRodas && \ 
+    git checkout master && \ 
     # se lembrar de remover isso dps /\
     cd actuator && \ 
     mkdir build && cd build && \ 
@@ -68,7 +68,7 @@ RUN cd /home/Armorial-WS && \
     cd Armorial-VSS && \ 
     # se lembrar de remover isso dps \/
     # essa eh a branch do Armorial-VSS q vcs vao usar!
-    git checkout integRef && \ 
+    git checkout amistoso2 && \ 
     # se lembrar de remover isso dps /\
     cd vss && \ 
     mkdir build && cd build && \ 
