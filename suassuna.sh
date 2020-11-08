@@ -15,20 +15,28 @@ cd build
 cd bin
 ./WRBackbone &> /dev/null &
 
+# $1 = ip-actuator
+# $2 = ip-multicast
+# $3 = teamColor
+# $4 = port-actuator
+# $5 = port-vision
+# $6 = port-referee
+# $7 = port-replacer
+
 sleep 2
 cd /home/Armorial-WS/
 cd Armorial-Actuator-VSS/actuator/bin
-./Armorial-Actuator-VSS $1 $2 &> /dev/null &
+./Armorial-Actuator-VSS $1 $4 &> /dev/null &
 
 sleep 2
 
 cd /home/Armorial-WS/
 cd ./Armorial-Carrero-VSS/Armorial-Carrero-VSS/bin
-./Armorial-Carrero-VSS $3 $4 &> /dev/null &
+./Armorial-Carrero-VSS $2 $5 &> /dev/null &
 
 sleep 2
 
 cd /home/Armorial-WS/
 cd ./Armorial-VSS/
 cd ./vss/bin/
-./Maracatronics-VSS $5 false $3 $6 $3 $7&> /dev/null &
+./Maracatronics-VSS $3 false $2 $6 $2 $7&> /dev/null &
