@@ -1,7 +1,7 @@
-scriptWD=`pwd`
+## how to run
+# sudo sh suassuna.sh ip-actuator ip-multicast teamColor port-actuator port-vision port-referee port-replacer
 
-# how to run
-# sudo sh suassuna.sh ip-actuator port-actuator ip-multicast port-vision teamColor port-referee port-replacer
+scriptWD=`pwd`
 
 sudo rm -rf /var/lib/omniorb/*
 sudo service omniorb4-nameserver restart
@@ -14,14 +14,6 @@ cd trunk
 cd build
 cd bin
 ./WRBackbone &> /dev/null &
-
-# $1 = ip-actuator
-# $2 = ip-multicast
-# $3 = teamColor
-# $4 = port-actuator
-# $5 = port-vision
-# $6 = port-referee
-# $7 = port-replacer
 
 sleep 2
 cd /home/Armorial-WS/
